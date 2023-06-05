@@ -1,0 +1,37 @@
+.activities-main {
+    max-width: 980px;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 50px 0 50px 0;
+}
+
+.activities-content {
+    margin: 20px;
+}
+
+.activities-img {
+    max-width: 100%;
+}
+
+.activities-img img {
+    width: 100%;
+}
+
+.activities-content h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    margin: 5px 0 5px 0;
+}
+
+.activities-content p {
+    font-size: 13px;
+}
+
+.activities-content span {
+    font-size: 14px;
+    color: #3399cc;
+    font-style: italic;
+}

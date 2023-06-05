@@ -1,0 +1,52 @@
+.finish-container {
+    max-width: 588px;
+    height: fit-content;
+    margin: auto;
+    padding: 205px 0 250px 0;
+}
+
+.finish-container h3 {
+    max-width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3399cc;
+    background-color: rgba(51, 153, 204, 0.2);
+    border: 1px solid #3399cc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.finish-layer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.finish-layer p {
+    width: 100%;
+    font-size: 13px;
+    color: #333333;
+    text-align: right;
+}
+
+.finish-layer button {
+    width: 207px;
+    height: 35px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    background-color: #3399cc;
+}
+
+.finish-layer button:hover {
+    background-color: #0f6a97;
+    cursor: pointer;
+}
+
+.button-layer {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}

@@ -1,0 +1,203 @@
+/*--GUEST TITLE--*/
+.container-guest {
+    max-width: 564px;
+    margin: auto;
+}
+
+.guest-title {
+    width: 100%;
+    color: #333333;
+    border-bottom: 2px dashed grey;
+}
+
+.guest-title h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 50px 0px 20px 0px;
+}
+
+.guest-title p {
+    font-size: 13px;
+    margin-bottom: 33px;
+}
+
+/*--GUEST FORM--*/
+.guest-form {
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.guest-form-top {
+    width: 100%;
+    border-bottom: 2px dashed grey;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.guest-form-top .guest-form-layer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.guest-form-layer label {
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.guest-form-layer input {
+    width: 269px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*--GUEST FORM mail--*/
+.form-mail {
+    width: 100%;
+    border-bottom: 2px dashed grey;
+    padding-bottom: 40px;
+}
+
+.form-mail div p {
+    font-size: 13px;
+    color: #333333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.form-mail-layer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.form-mail-layer div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-mail-layer div label {
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-mail-layer div input {
+    width: 269px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/*--GUEST FORM card--*/
+.form-card {
+    width: 100%;
+    border-bottom: 2px dashed grey;
+}
+
+.form-card h3 {
+    font-size: 20px;
+    color: #333333;
+    font-weight: 500;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.form-card p {
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 17px;
+}
+
+.form-card-layer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.form-card-layer div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card-layer div label {
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#creditCard {
+    width: 269px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#cardNumber {
+    width: 269px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.exprires-select {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.exprires {
+    width: 48%;
+}
+
+.exprires-select select {
+    width: 129px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 9px;
+    margin-bottom: 40px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.form-btn button {
+    width: 207px;
+    height: 35px;
+    margin-top: 40px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#btn-back {
+    margin-right: 10px;
+    background-color: #959292;
+}
+
+#btn-con {
+    background-color: #3399cc;
+}
+
+#btn-back:hover {
+    background-color: #cec9c9;
+}
+
+#btn-con:hover {
+    background-color: #116e9c;
+}

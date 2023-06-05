@@ -1,0 +1,98 @@
+.container-contact {
+    max-width: 980px;
+    height: fit-content;
+    margin: auto;
+}
+
+.contact-layer {
+    max-width: 830px;
+    height: fit-content;
+    margin: auto;
+}
+
+.our-location h3 {
+    font-size: 25px;
+    color: #333333;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.map-location {
+    max-width: 829px;
+    padding-bottom: 20px;
+}
+
+.map-location iframe {
+    width: 100%;
+    height: 308px;
+}
+
+/*-- CONTACT - FORM--*/
+.contact-form h3 {
+    font-size: 25px;
+    color: #333333;
+    font-weight: 500;
+    margin: 20px 0 10px 0;
+}
+
+.contact-top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+/* CSS cho nhãn */
+label {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+
+input,
+#sunject {
+    width: 267px;
+    height: 36px;
+    border: none;
+    border-radius: 3pt;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #333333;
+}
+
+.contact-bot {
+    max-width: 100%;
+}
+
+.contact-bot #message {
+    display: block;
+    width: 100%;
+    height: 147px;
+    border: none;
+    border-radius: 3pt;
+    padding: 10px;
+    resize: none;
+}
+
+.btn-finish {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.btn-finish button {
+    width: 137px;
+    height: 35px;
+    border: none;
+    background-color: #3399cc;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-finish button:hover {
+    background-color: #165d81;
+    cursor: pointer;
+}

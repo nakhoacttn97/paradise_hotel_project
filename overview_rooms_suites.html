@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style_overview.css">
+    <link rel="stylesheet" href="./css/queries.css">
+    <link rel="stylesheet" href="/css/style_of_video.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="./css/jquery.datetimepicker.css">
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script src="./js/jquery.datetimepicker.full.js"></script>
+    <title>Overview</title>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-header">
+            <div class="nav-header-layer">
+                <div class="logo-header">
+                    <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+                </div>
+                <div class="nav">
+                    <span class="nav-toggle close-nav"><i class="fa fa-times"></i></span>
+                    <span class="nav-toggle open-nav"><i class="fa fa-bars"></i></span>
+                    <nav id="navBar">
+                        <a href="index.html">Hotel</a>
+                        <a class="active" href="./overview_rooms_suites.html">Rooms & Suites</a>
+                        <a href="./reservation.html">Reservation</a>
+                        <a href="./activities.html">Activites</a>
+                        <a href="./contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="language-select">
+                    <select>
+                        <option value="en">EN</option>
+                        <option value="vi">VN</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- header-rooms suites -->
+        <div class="libs-rooms-suites">
+            <div class="slide-rooms-suites">
+                <div class="title-rooms-suites">
+                    <h3>ROOMS & SUITES</h3>
+                    <div class="triangle"></div>
+                </div>
+            </div>
+        </div>
+        <!-- NAV-ROOMS-SUITES -->
+        <div class="nav-rooms-suites">
+            <div class="nav-rooms-suites-layer">
+                <nav>
+                    <a id="nav-rooms-active" href="./overview_rooms_suites.html">Overview</a>
+                    <a href="./rooms.html">Rooms</a>
+                    <a href="#">Suites</a>
+                    <a href="#">Presidential Suite</a>
+                </nav>
+            </div>
+        </div>
+        <!-- MAIN OVERVIEW (MAIN-BODY) -->
+        <div class="main-overview">
+            <div class="overview-content">
+                <div class="title-overview">
+                    <h1>Rooms & Suites with an Amazing <b>Paradise View</b> </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at nibh varius odio
+                        sollicitudin blandit nec eu elit. Suspendisse ac risus nunc, quis elementum lorem. Pellentesque
+                        vehicula egestas eros nec commodo. Phasellus adipiscing pretium sem, id congue erat fermentum
+                        at. Fusce dapibus felis non ante gravida convallis. Nullam vulputate convallis lectus in
+                        ultrices.</p>
+                </div>
+                <div class="video-overviews">
+                    <div class="video-overview-1">
+                        <div class="btn">
+                            <div class="play">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="clip">
+                            <video
+                                src="/video_rooms_suites/Hilton Bali Resort - Hotel Video - The Nusa Dua Villa - Videographer.mp4"
+                                controls></video>
+                            <b class="close">Close</b>
+                        </div>
+                        <script>
+                            let btn = document.querySelector('.btn');
+                            let clip = document.querySelector('.clip');
+                            let close = document.querySelector('.close');
+                            let video = document.querySelector('video');
+                            let navHeader = document.querySelector('.nav-header');
+                            btn.onclick = function () {
+                                btn.classList.add('active');
+                                clip.classList.add('active');
+                                video.play();
+                                video.currentTime = 0;
+                                navHeader.style.opacity = 0;
+                            }
+                            close.onclick = function () {
+                                btn.classList.remove('active');
+                                clip.classList.remove('active');
+                                video.pause();
+                                navHeader.style.opacity = 1;
+                            }
+                        </script>
+
+                        <h3>Rooms</h3>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit, sed
+                            diam nonummy nibh
+                        </p>
+                    </div>
+                    <div class="video-overview-1">
+                        <div class="btn-2">
+                            <div class="play-2">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="clip-2">
+                            <video id="video-2"
+                                src="/video_rooms_suites/Hotel Cinematic - Boutique Hotel Port Elizabeth.mp4"
+                                controls></video>
+                            <b class="close-2">Close</b>
+                        </div>
+                        <script>
+                            var btn2 = document.querySelector('.btn-2');
+                            var clip2 = document.querySelector('.clip-2');
+                            var close2 = document.querySelector('.close-2');
+                            var video2 = document.querySelector('#video-2');
+                            let navHeader2 = document.querySelector('.nav-header');
+                            btn2.onclick = function () {
+                                btn2.classList.add('active-2');
+                                clip2.classList.add('active-2');
+                                video2.play();
+                                video2.currentTime = 0;
+                                navHeader2.style.opacity = 0;
+                            }
+                            close2.onclick = function () {
+                                btn2.classList.remove('active-2');
+                                clip2.classList.remove('active-2');
+                                video2.pause();
+                                navHeader2.style.opacity = 1;
+                            }
+                        </script>
+
+                        <h3>Suites</h3>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit, sed
+                            diam nonummy nibh
+                        </p>
+                    </div>
+                    <div class="video-overview-1">
+                        <div class="btn-3">
+                            <div class="play-3">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="clip-3">
+                            <video id="video-3"
+                                src="/video_rooms_suites/Tour The Presidential Suite at Four Seasons Resort Orlando at Walt Disney World® Resort.mp4"
+                                controls></video>
+                            <b class="close-3">Close</b>
+                        </div>
+                        <script>
+                            let btn3 = document.querySelector('.btn-3');
+                            let clip3 = document.querySelector('.clip-3');
+                            let close3 = document.querySelector('.close-3');
+                            let video3 = document.querySelector('#video-3');
+                            let navHeader3 = document.querySelector('.nav-header');
+                            btn3.onclick = function () {
+                                btn3.classList.add('active-3');
+                                clip3.classList.add('active-3');
+                                video3.play();
+                                video3.currentTime = 0;
+                                navHeader3.style.opacity = 0;
+                            }
+                            close3.onclick = function () {
+                                btn3.classList.remove('active-3');
+                                clip3.classList.remove('active-3');
+                                video3.pause();
+                                navHeader3.style.opacity = 1;
+                            }
+                        </script>
+
+                        <h3>Presidential Suite</h3>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit, sed
+                            diam nonummy nibh
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="overview-right">
+                <div class="overview-right-layer">
+                    <h3>Room attributes</h3>
+                    <p>Free WiFi Connection <i class="fa fa-wifi"></i></p>
+                    <p>Free entry to the rooftop Spa & Health Club <i class="fa fa-pagelines"></i></p>
+                    <p>Mineral water in the room upon arrival <i class="fa fa-tint"></i></p>
+                    <p>24-hour room service <i class="fa fa-bitbucket"></i></p>
+                    <p>Multimedia TV, Minibar, In-room safe, Individually controlled A/C <i class="fa fa-star"></i>
+                    </p>
+                    <p>24-hour In-room-Dining service <i class="fa fa-coffee"></i></p>
+                    <div class="book-form-rooms">
+                        <div class="book-title-r-s">
+                            <h3>Reservation</h3>
+                            <p>Request a reservation. We will come back to you shortly.</p>
+                        </div>
+                        <div class="form-rooms-suites">
+                            <select id="select-a-room">
+                                <option id="place-op" value="option1" disabled selected hidden>Select a room
+                                </option>
+                                <option value="option1">Rooms</option>
+                                <option value="option3">Suites</option>
+                                <option value="option4">Presidential Suite</option>
+                            </select>
+                            <div class="chose-date-in-out">
+                                <div class="chose chose-in">
+                                    <input type="text" id="date_timepicker_start" placeholder="From">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                </div>
+                                <div class="chose chose-out">
+                                    <input id="date_timepicker_end" type="text" placeholder="To">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                </div>
+                            </div>
+                            <button>Book now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER-SECTION -->
+        <footer>
+            <div class="footer-layer">
+                <p> &copy; 2012 Paradise Hotel. All Rights Reserved</p>
+                <div class="home-social-icon">
+                    <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square"></i></i></a>
+                    <a href="#"><i class="fa fa-youtube-square"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

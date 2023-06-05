@@ -1,0 +1,255 @@
+/* XỬ LÝ CS CHO FILE OVERVIEW.HTML */
+.slide-rooms-suites {
+    max-width: 100%;
+    height: 262px;
+    background-image: linear-gradient(45deg, rgba(2, 33, 64, 0.5) 40%, rgba(45, 95, 93, 0.5)), url("/img/slider-05.jpg");
+    /*------------- linear-gradient dùng để tạo một phông nền chèn trên một hình nền trích howkteam-----------*/
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 150%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.title-rooms-suites {
+    width: 45%;
+    display: flex;
+}
+
+.slide-rooms-suites .title-rooms-suites h3 {
+    font-size: 20px;
+    color: white;
+    background-color: rgba(51, 153, 204, 0.5);
+    padding: 10px;
+    padding-left: 60%;
+}
+
+.triangle {
+    height: fit-content;
+    border-bottom: 45px solid transparent;
+    border-left: 25px solid rgba(51, 153, 204, 0.5);
+    overflow: hidden;
+}
+
+/* NAV ROOMS SUITES slider-bg */
+.nav-rooms-suites {
+    width: 100%;
+    background-color: white;
+}
+
+.nav-rooms-suites .nav-rooms-suites-layer {
+    width: 980px;
+    height: fit-content;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 14px;
+    color: grey;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #333333;
+    font-weight: 600;
+}
+
+.nav-rooms-suites nav {
+    padding: 20px 0;
+}
+
+#nav-rooms-active {
+    font-weight: bold;
+    color: #333333;
+}
+
+/* <!-- MAIN OVERVIEW (MAIN-BODY) --> */
+.main-overview {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 980px;
+    height: 830px;
+    margin: auto;
+}
+
+
+.title-overview {
+    width: 673px;
+    height: fit-content;
+    border-bottom: 2px dashed gray;
+}
+
+.title-overview h1 {
+    font-weight: 400;
+    font-size: 25px;
+    color: #333333;
+    margin-top: 45px;
+    margin-bottom: 12px;
+}
+
+.title-overview p {
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 48px;
+    line-height: 1.5em;
+}
+
+.video-overviews {
+    width: 673px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 49px;
+}
+
+.video-overview-1 {
+    padding: 0 10px;
+    width: 50%;
+}
+
+.video-overview-1 h3 {
+    padding: 20px 0 12px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.video-overview-1 p {
+    font-size: 13px;
+}
+
+/* XỬ LÝ OVERVIEW-RIGHT */
+.overview-right {
+    width: 100%;
+    height: 100%;
+}
+
+.overview-right .overview-right-layer {
+    margin-top: 45px;
+    border-left: 2px solid grey;
+    padding-left: 30px;
+    display: block;
+}
+
+.overview-right-layer h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+.overview-right-layer p {
+    font-size: 13px;
+    color: grey;
+    padding-bottom: 13px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.overview-right-layer p i {
+    font-size: 17px;
+}
+
+.overview-right-layer p:hover i {
+    color: #3399cc;
+    cursor: pointer;
+}
+
+/* xử lý book form rooms suites */
+.overview-right-layer .book-form-rooms {
+    display: block;
+    border: none;
+}
+
+.book-form-rooms .book-title-r-s {
+    display: block;
+    border: none;
+}
+
+.book-title-r-s p {
+    border: none;
+    margin-bottom: 10px !important;
+    padding-bottom: 0 !important;
+}
+
+.book-form-rooms .form-rooms-suites {
+    display: block;
+    border: none;
+}
+
+.book-form-rooms .form-rooms-suites .chose-date-in-out {
+    display: block;
+    border: none;
+}
+
+.form-rooms-suites #select-a-room {
+    width: 100%;
+    height: 37px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.book-form-rooms .form-rooms-suites .chose-date-in-out {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-rooms-suites .chose-date-in-out .chose-in input {
+    max-width: 100%;
+    height: 37px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.form-rooms-suites .chose-date-in-out .chose-out input {
+    max-width: 100%;
+    height: 37px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.form-rooms-suites .chose-date-in-out .chose-in,
+.form-rooms-suites .chose-date-in-out .chose-out {
+    border: none;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.form-rooms-suites .chose-date-in-out .chose-in span i,
+.form-rooms-suites .chose-date-in-out .chose-out span i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+}
+
+.form-rooms-suites button {
+    background-color: #3399cc;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    padding: 12px 0;
+    width: 100%;
+    border: none;
+}
+
+.form-rooms-suites button:hover {
+    background-color: #196b94;
+    cursor: pointer;
+}

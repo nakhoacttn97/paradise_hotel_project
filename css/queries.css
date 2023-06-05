@@ -1,0 +1,793 @@
+/* Responsive CSS */
+
+/* Big table to desktop 1024px to 1200px */
+@media only screen and (max-width: 1200px) {
+    .title-slide {
+        width: 85%;
+    }
+
+    .slide-rooms-suites .title-rooms-suites h3 {
+        font-size: 13px;
+    }
+}
+
+/* Small tablet to big tablet 768px to 1023 */
+@media only screen and (max-width: 1023px) {
+    .nav-header {
+        width: 100%;
+        background-color: black;
+        z-index: 1000;
+        position: fixed;
+    }
+
+    .nav-header-layer {
+        max-width: 980px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .title-slide .h1-layer h1 {
+        font-size: 20px;
+    }
+
+    .title-slide h4 {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .book-form form {
+        padding-top: 10px;
+    }
+
+    .home-content-layer {
+        width: 100%;
+        padding-top: 110px;
+    }
+
+    .book-form {
+        display: block;
+        height: fit-content;
+        padding-bottom: 10px;
+        width: 760px;
+    }
+
+    footer {
+        max-width: 100%;
+    }
+
+    .footer-layer {
+        width: 100%;
+    }
+
+    /* xử lý responsive cho file oerview */
+
+    .nav-rooms-suites .nav-rooms-suites-layer {
+        width: 100%;
+    }
+
+    .main-overview {
+        width: 100%;
+        height: fit-content;
+        grid-template-columns: 70% 30%;
+        padding: 0 45px 45px 45px;
+    }
+
+    .slide-rooms-suites .title-rooms-suites h3 {
+        font-size: 13px;
+    }
+
+    .overview-content {
+        padding-left: 10px;
+    }
+
+    .title-overview {
+        width: 90%;
+    }
+
+    .video-overviews {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .video-overview-1 {
+        width: 90%;
+        margin: 10px 0 10px 0;
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+    }
+
+    .overview-right-layer {
+        padding-right: 10px;
+    }
+
+
+    .book-form-rooms .form-rooms-suites .chose-date-in-out input {
+        width: 100%;
+    }
+
+    .overview-right-layer p {
+        font-size: 12px;
+    }
+
+    .chose-date-in-out .chose-in input {
+        width: 100%;
+    }
+
+    /* xử lý file rooms.html */
+    .content-rooms img {
+        max-width: 100%;
+    }
+
+    .content-rooms p {
+        width: 85%;
+    }
+
+    /*-- xu ly reversion - select rooms--*/
+    .select-left-bot {
+        /* display: grid;
+        grid-template-columns: 50% 50%; */
+    }
+
+    .select-room-left {
+        padding-left: 10%;
+    }
+
+    .select-tabs {
+        display: block;
+    }
+
+    .coast-btn {
+        justify-content: space-around;
+    }
+
+    /*-- ACTIVITIES --*/
+    .activities-main {
+        grid-template-columns: 50% 50%;
+    }
+
+    /*--contact--*/
+    .contact-layer {
+        padding: 0 7% 0 7%;
+    }
+
+    .contact-top div input {
+        width: 100%;
+    }
+
+    #sunject {
+        width: 100%;
+    }
+}
+
+/* Small phones to small tablets 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+    /* nav-header */
+    .logo-header {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .logo-text {
+        text-align: center;
+    }
+
+    .nav-header-layer {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav {
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+
+    .nav nav {
+        background-color: aliceblue;
+        position: absolute;
+        width: 100%;
+        transition: 0.5s;
+        top: 32px;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .header .nav nav a {
+        color: grey;
+        display: block;
+        text-align: left;
+        padding: 10px 0 10px 7%;
+    }
+
+    .nav-header .nav-header-layer .nav nav a {
+        color: grey;
+        display: block;
+        text-align: left;
+        padding: 10px 0 10px 7%;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        top: 0;
+        right: 30px;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+        transition: 0.5s;
+        transform: translateY(-70%);
+    }
+
+    .container .nav-toggle {
+        color: #3399cc;
+    }
+
+    .close-nav {
+        display: none;
+    }
+
+    /* slide-images */
+    .title-slide {
+        width: 70%;
+    }
+
+    .title-slide .h1-layer h1 {
+        font-size: 11px;
+    }
+
+    .title-slide .h4-layer h4 {
+        font-size: 11px;
+    }
+
+    .slide {
+        height: 50%;
+    }
+
+    .btn-slide i {
+        font-size: 30px;
+        top: 40%;
+    }
+
+    /* book form */
+    .book-form {
+        width: 100%;
+        font-size: 14px;
+        display: block;
+    }
+
+    .book-form form {
+        display: block;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .form-room {
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    form .form-right {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        position: relative;
+    }
+
+    .form-right input {
+        width: 176px;
+    }
+
+    .form-adults {
+        display: flex;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    .form-adults select {
+        width: 176px !important;
+        margin-left: 10px;
+        margin-top: 20px !important;
+    }
+
+    .input-group-addon {
+        position: absolute;
+        top: 57%;
+        right: 10px;
+        transform: translateY(-50%);
+    }
+
+    .btn-book-layer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* HOME-CONTENT */
+    .home-content {
+        height: fit-content;
+    }
+
+    .home-content-layer {
+        display: block;
+        padding-top: 400px;
+        padding-bottom: 20px;
+    }
+
+    .home-content-1 {
+        border-bottom: 2px solid grey;
+    }
+
+    /* xử lý file overview_rooms.html */
+
+    .main-overview {
+        display: block;
+        padding: 0 0 0 45px;
+    }
+
+    .slide-rooms-suites .title-rooms-suites h3 {
+        font-size: 10px;
+    }
+
+    .title-overview {
+        text-align: justify;
+    }
+
+    .video-overviews {
+        display: block;
+        padding-right: 45px;
+    }
+
+    .video-overview-1 {
+        width: 100%;
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+    }
+
+    .overview-right-layer {
+        margin-right: 45px;
+        border: none !important;
+        margin-bottom: 45px;
+        padding-right: 30px;
+    }
+
+    .form-rooms-suites .chose-date-in-out {
+        display: block !important;
+    }
+
+    .form-rooms-suites .chose-date-in-out .chose {
+        width: 100%;
+    }
+
+    .form-rooms-suites .chose-date-in-out .chose .input-group-addon {
+        position: sticky;
+    }
+
+    .form-rooms-suites .chose-date-in-out .chose-in span {
+        top: 5px;
+    }
+
+    /* xử lý file rooms.html */
+
+    .list-image {
+        /* bottom: 80px; */
+    }
+
+    .control {
+        /* top: 50%; */
+    }
+
+    .title-rooms {
+        /* font-size: 50%; */
+    }
+
+    /*-- xu ly cho file reservation.html --*/
+    .nav-rooms-suites-layer nav a {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .nav-rooms-suites-layer nav a span {
+        font-size: 12px;
+        padding: 3px 6px 3px 6px;
+    }
+
+    .basic-info-content {
+        width: 480px;
+        padding: 10px;
+    }
+
+    .form-basic {
+        max-width: 480px;
+    }
+
+    .form-group {
+        padding-left: 10px;
+    }
+
+    .form-top {
+        max-width: 480px;
+        display: block !important;
+        padding-left: 20%;
+        margin-right: 0px !important;
+    }
+
+    .form-bot {
+        max-width: 480px;
+        display: grid !important;
+        grid-template-columns: 50% 50%;
+        padding-left: 20%;
+        padding-right: 20%;
+        margin-right: 0px !important;
+    }
+
+    /*-- xu ly reversion - select rooms--*/
+    .container-select-room {
+        display: block;
+    }
+
+    .select-room-left {
+        margin-bottom: 50px;
+        padding-left: 15%;
+    }
+
+    .select-left-bot {
+        padding-right: 17%;
+    }
+
+    .slr-ul {
+        display: block;
+    }
+
+    /*-- xu ly reversion - guest infomation--*/
+    .guest-title {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .guest-title p {
+        text-align: justify;
+    }
+
+    .guest-form-top {
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+
+    .guest-form-layer input {
+        width: 90%;
+    }
+
+    .form-mail-layer div input {
+        width: 90%;
+    }
+
+    .form-mail {
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+
+    .form-card {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #creditCard,
+    #cardNumber {
+        width: 95%;
+    }
+
+    .exprires {
+        width: 100%;
+    }
+
+    .exprires-select {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #exprire1,
+    #exprire2 {
+        width: 90%;
+    }
+
+    /*-- xu ly reversion - Finish--*/
+    .finish-container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .finish-layer {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .finish-layer p {
+        margin-bottom: 20px;
+    }
+
+    /*--contact--*/
+    .contac-form-layer {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .contact-top {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .contact-bot {
+        margin-left: 10px;
+    }
+
+    .contact-bot #message {
+        width: 100%;
+        height: 83%;
+    }
+
+    .btn-finish {
+        display: flex;
+        justify-content: right;
+    }
+}
+
+/* Small phones form 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+    /* xử lý file index */
+    .slide .title-slide h1 {
+        font-size: 10px;
+    }
+
+    .slide .title-slide h3 {
+        font-size: 9px;
+    }
+
+    /* xử lý file Overview */
+    .slide-rooms-suites .title-rooms-suites h3 {
+        font-size: 14px;
+    }
+
+    .nav-rooms-suites-layer nav a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .main-overview {
+        padding-left: 15px;
+    }
+
+    .title-overview h1 {
+        font-size: 100%;
+    }
+
+    .title-overview p {
+        font-size: 80%;
+    }
+
+    .overview-right-layer {
+        margin-right: 15px;
+    }
+
+    .footer-layer {
+        display: block;
+        text-align: center;
+    }
+
+    /* xử lý file rooms */
+    .slide-rooms .main {
+        height: 50vh;
+    }
+
+    .main .control {
+        top: 200px;
+    }
+
+    .main .list-image {
+        width: 80%;
+        height: fit-content;
+        top: 275px;
+    }
+
+    .main .list-image div {
+        height: 50%;
+    }
+
+    .main .list-image img {
+        height: 100%;
+        opacity: 1;
+    }
+
+    .main .title-rooms {
+        font-size: 80%;
+        padding: 5px;
+    }
+
+    .title-overview p {
+        text-align: justify;
+    }
+
+    .main-content-rooms h2 {
+        font-size: 16px;
+    }
+
+    .main-content-rooms .content-rooms {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 100%;
+
+        border-bottom: 1px solid grey;
+        padding-bottom: 10px;
+        font-size: 12.8px;
+        text-align: justify;
+    }
+
+    .main-content-rooms .content-rooms img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 12px;
+    }
+
+    .main-content-rooms .content-rooms p {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*-- reversion basic info --*/
+    .basic-info-content {
+        width: 280px;
+        height: fit-content;
+    }
+
+    .basic-info-content p {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .form-basic {
+        width: 100%;
+    }
+
+    .form-group input {
+        width: 75%;
+    }
+
+    .form-group select {
+        width: 100%;
+    }
+
+    .nav-rooms-suites-layer nav {
+        overflow-x: auto;
+        white-space: nowrap;
+        /* Ngăn các mục con xuống dòng */
+    }
+
+    .nav-rooms-suites-layer a {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .btn-reversion {
+        margin-bottom: 50px;
+    }
+
+    .main-basic-info {
+        height: 750px;
+    }
+
+    /*---*/
+
+    /*-- xu ly reversion - select rooms--*/
+    .select-left-top h3 {
+        font-size: 15px;
+        font-weight: 500;
+        color: #333333;
+    }
+
+    .select-left-top p {
+        font-size: 12px;
+        font-weight: 100;
+        color: #333333;
+    }
+
+    .select-tabs .select-room-info h4 {
+        font-size: 13px;
+    }
+
+    .select-tabs .select-room-info .slr-ul ul {
+        font-size: 10px;
+    }
+
+    .coast-btn {
+        display: block;
+        font-size: 15px;
+    }
+
+    .coast-btn button {
+        margin: 15px 0 0 0;
+    }
+
+    .select-left-bot {
+        padding-right: 18%;
+    }
+
+    /*-- xu ly reversion - guest infomation--*/
+    .guest-form-top {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .form-mail-layer {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .form-card-layer {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #exprire1,
+    #exprire2 {
+        width: 80%;
+    }
+
+    .form-btn button {
+        width: 40%;
+    }
+
+    /*-- ACTIVITIES --*/
+
+    .activities-main {
+        grid-template-columns: 100%;
+    }
+
+    /*--contact--*/
+    .map-location iframe {
+        height: 100%;
+    }
+
+    .contac-form-layer {
+        display: block;
+    }
+
+    .contact-top {
+        margin-right: 0px;
+    }
+
+    .contact-bot {
+        margin-left: 0px;
+    }
+
+    .contact-bot #message {
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-finish {
+        justify-content: center;
+    }
+}

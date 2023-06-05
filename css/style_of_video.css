@@ -1,0 +1,212 @@
+/* xử lý video */
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/full-shot-man-talking-host.jpg");
+    background-size: cover;
+}
+
+.btn .play {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #3399cc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btn.active .play {
+    box-shadow: 100vh 0 0 150vh #3399cc;
+}
+
+.clip {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.clip.active {
+    transition-delay: 0.5s;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.clip video {
+    max-width: 70%;
+}
+
+.clip .close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3399cc;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5pt;
+}
+
+.clip .close:hover {
+    background-color: #0c4461;
+    color: white;
+}
+
+/* xử lý video 2 */
+
+.btn-2 {
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/wp1887794.jpg");
+    background-size: cover;
+}
+
+.btn-2 .play-2 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #3399cc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btn-2.active-2 .play-2 {
+    box-shadow: 50vh 0 0 200vh #3399cc;
+}
+
+.clip-2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.clip-2.active-2 {
+    transition-delay: 0.5s;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.clip-2 #video-2 {
+    max-width: 70%;
+}
+
+.clip-2 .close-2 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3399cc;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5pt;
+}
+
+.clip-2 .close-2:hover {
+    background-color: #0c4461;
+    color: white;
+}
+
+/* xử lý video 3 */
+
+.btn-3 {
+    position: relative;
+    cursor: pointer;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/img/president-suite-50681272.jpg");
+    background-size: cover;
+}
+
+.btn-3 .play-3 {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #3399cc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.btn-3.active-3 .play-3 {
+    box-shadow: 20vh 0 0 150vh #3399cc;
+}
+
+.clip-3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.clip-3.active-3 {
+    transition-delay: 0.5s;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.clip-3 #video-3 {
+    max-width: 70%;
+}
+
+.clip-3 .close-3 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3399cc;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5pt;
+}
+
+.clip-3 .close-3:hover {
+    background-color: #0c4461;
+    color: white;
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_reservation.css">
+    <link rel="stylesheet" href="/css/style_guest_info.css">
+    <link rel="stylesheet" href="/css/style_overview.css">
+    <link rel="stylesheet" href="./css/queries.css">
+    <link rel="stylesheet" href="/css/style_of_video.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="./css/jquery.datetimepicker.css">
+    <script src="./js/jquery-3.6.4.js"></script>
+    <script src="./js/jquery.datetimepicker.full.js"></script>
+    <title>Reservation</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-header">
+            <div class="nav-header-layer">
+                <div class="logo-header">
+                    <a href="./index.html"><img src="./img/logo.png" alt=""></a>
+                </div>
+                <div class="nav">
+                    <span class="nav-toggle close-nav"><i class="fa fa-times"></i></span>
+                    <span class="nav-toggle open-nav"><i class="fa fa-bars"></i></span>
+                    <nav id="navBar">
+                        <a href="./index.html">Hotel</a>
+                        <a href="./overview_rooms_suites.html">Rooms & Suites</a>
+                        <a href="./reservation.html" class="active">Reservation</a>
+                        <a href="./activities.html">Activites</a>
+                        <a href="./contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="language-select">
+                    <select>
+                        <option value="en">EN</option>
+                        <option value="vi">VN</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- header-rooms suites -->
+        <div class="libs-rooms-suites">
+            <div class="slide-rooms-suites">
+                <div class="title-rooms-suites">
+                    <h3>RESERVATION</h3>
+                    <div class="triangle-r1"></div>
+                </div>
+            </div>
+        </div>
+        <!-- NAV-ROOMS-SUITES -->
+        <div class="nav-rooms-suites">
+            <div class="nav-rooms-suites-layer">
+                <nav>
+                    <a href="./reservation.html">
+                        <span>1</span>Basic infomation
+                    </a>
+                    <a href="./reservation02.html">
+                        <span>2</span>Select Room
+                    </a>
+                    <a id="nav-rooms-active" href="./reservation03.html">
+                        <span id="reser-active">3</span>Guest Infomation
+                    </a>
+                    <a href="./reservation04.html">
+                        <span>4</span>Finish
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <!-- MAIN OVERVIEW (MAIN-BODY) -->
+        <div class="container-guest">
+            <div class="guest-title">
+                <h3>Guest Information</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et provident dolores animi reiciendis nemo
+                    libero! Corrupti delectus accusamus debitis modi adipisci ipsa, cum esse aspernatur necessitatibus
+                    magni eaque, rem optio?</p>
+            </div>
+            <div class="guest-form">
+                <form action="">
+                    <div class="guest-form-top">
+                        <div class="guest-form-layer">
+                            <label for="title">Title</label>
+                            <input type="text" name="title" id="title">
+                        </div>
+                        <div class="guest-form-layer">
+                            <label for="firstName">First name</label>
+                            <input type="text" name="firstName" id="firstName">
+                        </div>
+                        <div class="guest-form-layer">
+                            <label for="lastName">Last name</label>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                        <div class="guest-form-layer">
+                            <label for="addRess">Address</label>
+                            <input type="text" name="addRess" id="addRess">
+                        </div>
+                        <div class="guest-form-layer">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city">
+                        </div>
+                        <div class="guest-form-layer">
+                            <label for="state">State/Province</label>
+                            <input type="text" name="state" id="state" placeholder="State/Province">
+                        </div>
+                        <div class="guest-form-layer">
+                            <label for="zip">Zip/Postal Code</label>
+                            <input type="text" name="zip" id="zip">
+                        </div>
+                        <div class="guest-form-layer">
+                            <label for="primaPhone">Primary Telephone</label>
+                            <input type="text" name="primaPhone" id="primaPhone">
+                        </div>
+                    </div>
+                    <div class="form-mail">
+                        <div>
+                            <p>Please enter your e-mail address to receive confirmation of your reservation and stay
+                                related
+                                communications 13px</p>
+                        </div>
+                        <div class="form-mail-layer">
+                            <div>
+                                <label for="g-email">Email</label>
+                                <input type="text" name="g-email" id="g-email">
+                            </div>
+                            <div>
+                                <label for="retype">Retype Email</label>
+                                <input type="text" name="retype" id="retype">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-card">
+                        <h3>Credit Card Information</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis congue dignissim turpis, ut
+                            consectetur mauris congue a. </p>
+                        <div class="form-card-layer">
+                            <div>
+                                <label for="">Credit card</label>
+                                <select name="creditCard" id="creditCard">
+                                    <option value="visa">Visa</option>
+                                    <option value="mastercard">Mastercard</option>
+                                    <option value="jcb">JCB</option>
+                                    <option value="napas">Napas</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="cardNumber">Card number</label>
+                                <input type="text" name="cardNumber" id="cardNumber">
+                            </div>
+                        </div>
+                        <div class="exprires">
+                            <label for="exprires-select">Expires</label>
+                            <div class="exprires-select">
+                                <select name="exprire1" id="exprire1">
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select name="exprire2" id="exprire2">
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-btn">
+                        <button id="btn-back">Back</button>
+                        <button id="btn-con">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- FOOTER-SECTION -->
+        <footer>
+            <div class="footer-layer">
+                <p> &copy; 2012 Paradise Hotel. All Rights Reserved</p>
+                <div class="home-social-icon">
+                    <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square"></i></i></a>
+                    <a href="#"><i class="fa fa-youtube-square"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
